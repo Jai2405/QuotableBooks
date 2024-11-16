@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs'); -%>
+
+<div class="intro text-center pb-5 mb-5">
+    <div class="container">
+        <h1 class="intro-title">Timeless Pages and Quotes</h1>
+    </div>
+</div>
+
+    <div class="quotes-section">
+        <h2 class="quote-heading">Quotes from <%= title %></h2>
+        <ul class="quotes-list">
+            <% quotes.forEach(quote => { %>
+                <li class="quote-item">"<%= quote.quote %>"</li>
+            <% }); %>
+        </ul>
+    </div>
+
+
+    <div class="footer py-5">
+        
+    </div>
+
+
+
+
+
+
+
+    
+
+
+
+  <%- include('partials/footer.ejs'); -%>

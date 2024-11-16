@@ -1,0 +1,53 @@
+<%- include('partials/header.ejs'); -%>
+
+<div class="intro text-center py-5">
+    <div class="container">
+        <h1 class="intro-title">Timeless Pages and Quotes</h1>
+        <p class="intro-text">
+            This is my personal collection of cherished books and memorable quotes. 
+            Each book featured here has left a mark on me, whether through its story, wisdom, or significance in shaping thought. 
+            Likewise, the quotes are reflections of ideas that resonate deeply with me and capture moments of insight or contemplation.
+        </p>
+    </div>
+</div>
+
+
+
+    <% books.forEach(book => { %>
+        <div class="book-container my-5">
+            <div class="book-header">
+                <h1 class="book-title"><%= book.title %></h1>
+                <h2 class="book-author">by <%= book.author %></h2>
+            </div>
+            <div class="book-content">
+                <img src="<%= book.url %>" class="book-image" alt="<%= book.title %> Cover" />
+                <div class="book-details">
+                    <p class="book-review"><%= book.review %></p>
+                    <h4 class="book-rating py-3">Rating: <%= book.rating %> / 10</h4>
+                    <form action="/quotes" method="GET" class="quote-form">
+                        <input type="hidden" name="bookID" value="<%= book.id %>">
+                        <input type="hidden" name="title" value="<%= book.title %>">
+                        <input type="hidden" name="author" value="<%= book.author %>">
+                        <input type="hidden" name="rating" value="<%= book.rating %>">
+                        <input type="hidden" name="review" value="<%= book.review %>">
+                        <input type="hidden" name="url" value="<%= book.url %>">
+                        <button class="quote-button" type="submit">Read quotes from <%= book.title %></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <% }); %>
+
+    <div class="footer py-5">
+        
+    </div>
+    
+    
+
+
+
+    
+
+
+
+  <%- include('partials/footer.ejs'); -%>

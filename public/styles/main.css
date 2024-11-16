@@ -1,0 +1,200 @@
+main {
+    background-color: #396a87;
+    /*background-color: #96C2DB; */
+  }
+  
+.book-container {
+    background-color: #acaaaa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.book-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.book-author {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+}
+
+.book-content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.book-image {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-details {
+    flex-grow: 1;
+}
+
+.book-review {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.book-rating {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    color: #393d42;
+    margin-bottom: 1rem;
+}
+
+.quote-form {
+    text-align: left;
+}
+
+.quote-button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #21364b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quote-button:hover {
+    background-color: #485f78;
+}
+
+
+.intro {
+    background-color:slategray;
+    color: #333;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color:#d3dbe3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.intro-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.intro-text {
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 2.5rem;
+    }
+
+    .intro-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+}
+
+
+/*  Quotes */
+
+
+
+.quote-page {
+    background-color: #396a87; /* Matches your main background */
+    color: #d3dbe3;
+    padding: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.quotes-section {
+    margin:0 auto;
+    max-width: 1000px;
+    margin-top: 2rem;
+    background-color: #acaaaa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #21364b;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.quotes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quote-item {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    position: relative;
+    color: #333;
+    background-color: rgba(146, 138, 167, 0);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-item:before {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #21364b;
+    position: absolute;
+    left: -0.5rem;
+    top: -0.2rem;
+}
+
+.quote-item:hover {
+    background-color: #a3a7aa;
+    color: white;
+    transition: background-color 0.6s ease;
+}
+
