@@ -1,6 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -12,10 +15,11 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "bookproject",
-  password: "postgresjai",
+  password: process.env.DB_PASSWORD,
   port: 5432,
 });
 db.connect();
+console.log(process.env.DB_PASSWORD);
 
 app.get("/", async (req, res) => {
     var result = await db.query("SELECT * FROM books;");
