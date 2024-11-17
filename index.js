@@ -16,10 +16,15 @@ const db = new pg.Client({
   host: process.env.DB_HOST,
   database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT
+  port: process.env.DB_PORT,
+  ssl: {
+    rejectUnauthorized: false, // Important for SSL to work properly
+  },
 });
-db.connect();
-console.log(process.env.DB_PASSWORD);
+
+db.connect()
+  .then(() => console.log('Connected to the database'))
+  .catch(err => console.error('Connection error', err.stack));
 
 app.get("/", async (req, res) => {
     var result = await db.query("SELECT * FROM books;");
