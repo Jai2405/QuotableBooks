@@ -1,12 +1,13 @@
 main {
-    background-color: #396a87;
-    /*background-color: #96C2DB; */
+    background-color: #d5d9d9;
+    
   }
   
 .book-container {
-    background-color: #acaaaa;
+    background-color: #f3f6f6;
     border: 1px solid #ddd;
     border-radius: 8px;
+    border-color: #393d42;
     margin: 2rem auto;
     padding: 2rem;
     max-width: 800px;
