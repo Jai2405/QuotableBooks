@@ -8,7 +8,7 @@ A web application to showcase my favorite books and memorable quotes. Each book 
 - **Quote Collections**: Dive into inspiring and impactful quotes from each book.  
 
 ## **Visit the Website**
-Explore the quotes and be inspired: [**Quotable Books**](https://quotablebooks.onrender.com/)
+Explore my favorite books and their quotes: [**Quotable Books**](https://quotablebooks.onrender.com/)
 
 ## **Run Locally**
 Follow these steps to run the website on your local machine:
