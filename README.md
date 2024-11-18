@@ -20,8 +20,17 @@ Follow these steps to run the website on your local machine:
 ### **Steps to Run**
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/quotable-books.git
+   git clone https://github.com/Jai2405/QuotableBooks.git
    cd quotable-books
+   '''
+2. **Install dependencies**:
+   ```bash
+   npm i
+   '''
+3. **Start the server**:
+   ```bash
+   node index.js
+   '''
    
 ## 🚀 Technologies Used  
 
